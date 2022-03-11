@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vanshika-bhasin.github.io/Typing-Speed-Tester/static/css/main.a5a9d693.css",
+    "main.js": "/vanshika-bhasin.github.io/Typing-Speed-Tester/static/js/main.ff8e6fae.js",
+    "index.html": "/vanshika-bhasin.github.io/Typing-Speed-Tester/index.html",
+    "main.a5a9d693.css.map": "/vanshika-bhasin.github.io/Typing-Speed-Tester/static/css/main.a5a9d693.css.map",
+    "main.ff8e6fae.js.map": "/vanshika-bhasin.github.io/Typing-Speed-Tester/static/js/main.ff8e6fae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5a9d693.css",
+    "static/js/main.ff8e6fae.js"
+  ]
+}
