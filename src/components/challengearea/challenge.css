@@ -1,0 +1,14 @@
+.challenge-container{
+    margin:2% 8%;
+    margin-bottom: 0;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(147, 205, 207);
+    color: rgb(38, 53, 48); */
+}
+.challenge-header{
+    font-weight: bold;
+
+}

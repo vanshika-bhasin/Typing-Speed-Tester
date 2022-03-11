@@ -1,0 +1,9 @@
+*{
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+.mainpart{
+  background-color: rgb(147, 205, 207);
+    color: rgb(38, 53, 48);
+}

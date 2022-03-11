@@ -1,0 +1,15 @@
+.test-area{
+    display: flex;
+    flex-direction: column;
+
+    margin: 6% 0;
+    background-color: white;
+    min-height: 70vh;
+    min-width: 65vw;
+    box-shadow: 7px 2px 6px rgba(0,0,0,0.14),4px 1px 6px rgba(0,0,0,0.14),-3px 1px 4px rgba(0,0,0,0.14), 8px 2px 7px rgba(0,0,0,0.14);
+}
+.tryagain-area{
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+}

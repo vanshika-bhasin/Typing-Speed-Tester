@@ -1,0 +1,62 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+.timer-area{
+    margin: 17px;
+}
+.timer{
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    font-weight: 500;
+}
+.timer-text{
+    margin: 0;
+    margin-top: -5px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(182, 54, 54);
+}
+.textarea-part{
+    margin: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 85%;
+    justify-content: right;
+}
+.textarea-left,.textarea-right{
+display: flex;
+width: 50%;
+flex-grow: 1;
+}
+.text-areaa{
+    font-family: 'Times New Roman', Times, serif;
+text-align: left;
+height: 400px;
+width: 100%;
+padding: 12px;
+line-height: 20px;
+flex-grow: 1;
+flex-wrap: wrap;
+overflow: scroll;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2), 2px 2px 13px rgba(0,0,0,0.16), 1px 5px 15px rgba(0,0,0,0.18), 1px 2px 13px rgba(0,0,0,0.14);
+transition: all 0.2s;
+scrollbar-width: none;
+}
+.text-areaa:hover{
+    box-shadow: 1px 14px 27px rgba(0,0,0,0.2), 2px 12px 14px rgba(0,0,0,0.16), 1px 12px 15px rgba(0,0,0,0.18), 1px 12px 25px rgba(0,0,0,0.14);
+}
+.text-areaa::-webkit-scrollbar{
+    display: none;
+}
+.textarea-paragraph{
+    font-size: 13px;
+    background-color: rgb(231, 229, 229);
+    padding: 14px;
+    color: rgb(32, 7, 7);
+}

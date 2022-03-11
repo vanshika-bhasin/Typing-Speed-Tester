@@ -1,0 +1,48 @@
+.tryagain-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tryagain-area>h1{
+    margin: 0;
+margin-bottom: 30px;
+font-size: 36px;
+font-weight: bold;
+}
+.result-area>p{
+    font-size: 20px;
+    margin: 9px;
+}
+.end-buttons{
+    border: none;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 23px;
+    text-align: center;
+    vertical-align:middle;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.35);
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.tryagain-btn{
+    background-color: #3e4248;
+}
+.tryagain-btn:hover,.tryagain-btn:focus{
+    background-color: #6b6b6b;
+}
+.share-btn{
+    background-color: #3b5998;
+}
+.share-btn:hover,.share-btn:focus{
+    background-color: #6681bb;
+}
+.tweet-btn{
+    background-color: #1da1f2;
+}
+.tweet-btn:hover,.tweet-btn:focus{
+    background-color: #55aadf;
+}
