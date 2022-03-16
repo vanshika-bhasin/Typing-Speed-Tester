@@ -5,6 +5,7 @@ import Scroll from "./components/scroll/Scroll";
 import Footer from "./components/footer/Footer";
 import Challenge from './components/challengearea/Challenge';
 import { Component } from 'react';
+import {SAMPLE_PARAGRAPHS} from './data/sampleParagraphs';
 //Animate on Scroll Library and typewriter-effect library have been added.
 
 const totalTime=60;
@@ -22,12 +23,26 @@ const defaultState={
 class App extends Component{
   state=defaultState;
 
+fetchRandomParagraph=()=>{
+  const info=SAMPLE_PARAGRAPHS[Math.floor(Math.random()*SAMPLE_PARAGRAPHS.length)];
+  
+  // this.setState({completeParagraph:info});
+  const paralettersarr=info.split("");
+  const testinfo=paralettersarr.map((paraletter)=>{
+    return {
+      testletter:paraletter,
+      status:"not attempted"
+    }
+  });
+this.setState({...defaultState,testinfo, completeParagraph:info});
+}
+
 fetchparagraph=()=>{
   fetch(paraUrl)
   .then((response)=>response.text())
   .then((info)=>{
 this.setState({completeParagraph:info});
-  const paralettersarr=this.state.completeParagraph.split("");
+  const paralettersarr=info.split("");
   const testinfo=paralettersarr.map((paraletter)=>{
     return {
       testletter:paraletter,
@@ -39,7 +54,7 @@ this.setState({...defaultState,testinfo, completeParagraph:info});
 }
 
 componentDidMount(){
-  this.fetchparagraph();   
+  this.fetchRandomParagraph();   
 }
 
   startTimer=()=>{
@@ -62,7 +77,7 @@ componentDidMount(){
   }
   
   startAgain=()=>{
-    this.fetchparagraph();
+    this.fetchRandomParagraph();
   }
 
   handleinput=(inputt)=>{
